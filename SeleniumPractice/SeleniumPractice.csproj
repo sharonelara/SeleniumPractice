@@ -62,8 +62,8 @@
   <ItemGroup>
     <Compile Include="Examples\OpenBrowser.cs" />
     <Compile Include="Examples\WebDriverObjectMethods.cs" />
-    <Compile Include="Exercises\7YoniAnswer.cs" />
-    <Compile Include="Exercises\7MyAnswer.cs" />
+    <Compile Include="Exercises\Lesson7YoniAnswer.cs" />
+    <Compile Include="Exercises\Lesson7MyAnswer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
