@@ -62,14 +62,14 @@
   <ItemGroup>
     <Compile Include="Examples\OpenBrowser.cs" />
     <Compile Include="Examples\WebDriverObjectMethods.cs" />
+    <Compile Include="Exercises\7YoniAnswer.cs" />
+    <Compile Include="Exercises\7MyAnswer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Exercises\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
