@@ -60,10 +60,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Examples\Locators.cs" />
     <Compile Include="Examples\OpenBrowser.cs" />
     <Compile Include="Examples\WebDriverObjectMethods.cs" />
-    <Compile Include="Exercises\Lesson7YoniAnswer.cs" />
-    <Compile Include="Exercises\Lesson7MyAnswer.cs" />
+    <Compile Include="Exercises\Lesson10YoniAnswer.cs" />
+    <Compile Include="Exercises\Lesson10MyAnswer.cs" />
+    <Compile Include="Exercises\Lesson12MyAnswer.cs" />
+    <Compile Include="Exercises\Lesson12YoniAnswer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

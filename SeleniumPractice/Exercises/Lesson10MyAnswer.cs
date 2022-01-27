@@ -12,34 +12,54 @@ namespace SeleniumPractice.Exercises
     [TestFixture]
     class MyAnswer7
     {
-        [Test]
-        public void UrlTitleCompare()
+        IWebDriver driver;
+
+        [OneTimeSetUp]
+        public void StartSession()
         {
-            IWebDriver driver = new ChromeDriver();
+            driver = new ChromeDriver();
             //driver.Manage().Window.Position = new System.Drawing.Point(0, 0);
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl("http://imdb.com");
             driver.Navigate().Refresh();
+        }
+
+        [Test]
+        public void UrlCompare()
+        {
             string Url = driver.Url;
-            string Title = driver.Title;
             string ExpUrl = "http://imdb.com";
-            string ExpTitle = "IMDB";
 
             Console.WriteLine("Actual URL is: " + driver.Url);
             Console.WriteLine("Expected URL is: " + ExpUrl);
-            Console.WriteLine("Actual Title is: " + driver.Title);
-            Console.WriteLine("Expected Title is: " + ExpTitle);
+         
 
             if (Url.Equals(ExpUrl))
                 Console.WriteLine("Actual and expected URLs match - " + Url);
             else
                 Console.WriteLine("Actual and expected URLs DO NOT match");
 
+        }
+
+        [Test]
+        public void TitleCompare()
+        {
+            string Title = driver.Title;
+            string ExpTitle = "IMDB";
+
+            Console.WriteLine("Actual Title is: " + driver.Title);
+            Console.WriteLine("Expected Title is: " + ExpTitle);
+
             if (Title.Equals(ExpTitle))
                 Console.WriteLine("Actual and expected titles match - " + Title);
             else
                 Console.WriteLine("Actual and expected titles DO NOT match");
+            
+        }
 
+        [OneTimeTearDown]
+        public void CloseSession() 
+        {
             driver.Quit();
         }
     }
