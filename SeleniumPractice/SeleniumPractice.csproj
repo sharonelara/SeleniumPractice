@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Examples\Controllers.cs" />
     <Compile Include="Examples\Locators.cs" />
     <Compile Include="Examples\OpenBrowser.cs" />
     <Compile Include="Examples\WebDriverObjectMethods.cs" />
