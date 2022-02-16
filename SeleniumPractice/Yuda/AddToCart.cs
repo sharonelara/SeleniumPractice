@@ -41,9 +41,30 @@ namespace Exersices
         //Cart2 item: Sauce Labs Bike Light
         //Cart3 item: Sauce Labs Bolt T-Shirt
         //Item names are in div class inventory_item_name
+
+       
+        [TestCase()]
+        [TestCase()]
+        [TestCase()]
+        [TestCase()]
+        [TestCase()]
+        [TestCase()]
+
+
+
+
         [Test]
-        public void Cart1()
+        public void Cart()
         {
+            //I want to identify xpath by id text that changes based on item:
+            string addToCart = "add-to-cart-";
+            string Backpack = addToCart + "sauce-labs-backpack";
+            string BikeLight = addToCart + "sauce-labs-bike-light";
+            string BoltTShirt = addToCart + "sauce-labs-bolt-t-shirt";
+
+            //Test that string is correct for xpath id
+            //Console.WriteLine(Backpack);
+            IWebElement ItemToBuy = driver.FindElement(By.Id(BoltTShirt));
             
         }
 

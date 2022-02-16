@@ -70,6 +70,8 @@
     <Compile Include="Exercises\Lesson12YoniAnswer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Yuda\AddToCart.cs" />
+    <Compile Include="Yuda\CarWash.cs" />
+    <Compile Include="Yuda\Item.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
